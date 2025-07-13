@@ -1,0 +1,490 @@
+<?php
+require("config.php");
+?>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the rich heritage, culture, and beauty of Marathwada - Maharashtra's historical heartland. Discover tourist attractions, local cuisine, and accommodations in Aurangabad, Nanded, Latur, and more.">
+    <meta name="keywords" content="Marathwada tourism, Aurangabad tourism, Ellora caves, Bibi ka Maqbara, Maharashtra tourism, Nanded Gurudwara, Marathwada culture">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Explore Marathwada - Historical Heritage of Maharashtra">
+    <meta property="og:description" content="Discover the rich cultural heritage, historical monuments, and vibrant traditions of Marathwada region in Maharashtra.">
+    <meta property="og:image" content="images/ellora.jpg">
+    <meta property="og:url" content="https://marathwada-tourism.com">
+    <meta property="og:type" content="website">
+    
+    <!-- Preload Critical Resources -->
+    <link rel="preload" href="styles.css" as="style">
+    <link rel="preload" href="script.js" as="script">
+    <link rel="preload" href="images/ellora.jpg" as="image">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" as="style">
+    
+    <title>Explore Maharashtra Explorer - Historical Heritage of Maharashtra</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <!-- Skip Navigation for Accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+        <a> Maharashtra Explorer </a>
+        <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+            <span class="hamburger"></span>
+        </button>
+        <ul class="nav-links" role="menubar">
+            <li role="none"><a href="#home" class="active" role="menuitem" aria-current="page">Home</a></li>
+            <li role="none"><a href="#destinations" role="menuitem">Destinations</a></li>
+            <li role="none"><a href="#heritage" role="menuitem">Heritage</a></li>
+            
+            <li role="none"><a href="#plan" role="menuitem">Plan Your Trip</a></li>
+            <li role="none"><a href="#contact" role="menuitem">Contact</a></li>
+            <li role="none"><a href="tourpackages/index.php" class="cta-button" role="menuitem">Go to Tour Packages</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Hero Section -->
+        <header class="hero" id="home" role="banner" style="background-image: url('images/sahaydri.jpg'); background-size: cover; background-position: center; position: relative;">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h1>Welcome to Maharashtra  </h1>
+                <p>Discover the rich heritage, culture, and beauty of Maharashtra's historical heartland</p>
+                <a href="#explore" class="cta-button">Start Exploring</a>
+            </div>
+        </header>
+
+        <!-- Featured Destinations -->
+        <section class="destinations" id="destinations">
+            <h2>Cities of Marathwada</h2>
+            <div class="destination-grid">
+                <!-- Aurangabad -->
+                <div class="destination-card">
+                    <img src="images/bibi ka maqbara.jpg" alt="Aurangabad">
+                    <h3>Chatrapati Sambhaji Nagar</h3>
+                    <p>The Tourism Capital of Maharashtra</p>
+                    <a href="cities/aurangabad.html" class="explore-btn">Explore City</a>
+                </div>
+                <!-- Nanded -->
+                <div class="destination-card">
+                    <img src="images/nanded/srtmu.jpg"Nanded">
+                    <h3>Nanded</h3>
+                    <p>Holy City of Sikhism</p>
+                    <a href="cities/nanded.html" class="explore-btn">Explore City</a>
+                </div>
+               
+                <!-- Jalna -->
+                <div class="destination-card">
+                    <img src="images/jalna industry.jpg" alt="Jalna">
+                    <h3>Jalna</h3>
+                    <p>Industrial City of Marathwada</p>
+                    <a href="cities/jalna.html" class="explore-btn">Explore City</a>
+                </div>
+                <!-- Pune -->
+                <div class="destination-card">
+                    <img src="images/shaniwar.jpg" alt="Pune">
+                    <h3>Pune</h3>
+                    <p>Cultural Capital of Maharashtra, known for its vibrant education, history, and IT hub.</p>
+                    <a href="cities/pune.html" class="explore-btn">Explore City</a>
+                </div>
+                <!-- Nashik -->
+                <div class="destination-card">
+                    <img src="images/trimbakeshwar.jpg" alt="Nashik">
+                    <h3>Nashik</h3>
+                    <p>Wine Capital and Pilgrimage City, famous for Kumbh Mela and scenic vineyards.</p>
+                    <a href="cities/nashik.html" class="explore-btn">Explore City</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Heritage Section -->
+        <section class="heritage" id="heritage">
+            <h2>Cultural Heritage</h2>
+            <div class="heritage-content">
+                <div class="heritage-text">
+                    <h3>Rich History & Culture</h3>
+                    <p>Explore the diverse cultural heritage of Marathwada, from ancient caves to medieval fortresses, and vibrant local traditions.</p>
+                </div>
+                <div class="destination-grid">
+                   
+                    <div class="destination-card">
+                        <img src="images/lavni.jpg" alt="Lavani Dance" />
+                        <h4>Lavani Dance</h4>
+                        <p>A traditional folk dance celebrated for its powerful rhythm and expressive movements, often performed during festivals.</p>
+                    </div>
+                    <div class="destination-card">
+                        <img src="images/Ganesh-Chaturthi-Celebration-in-India.jpg" alt="Ganesh Festival" />
+                        <h4>Ganesh Chaturthi</h4>
+                        <p>The grand festival honoring Lord Ganesha, marked by vibrant processions, music, and community celebrations across Maharashtra.</p>
+                    </div>
+                    <div class="destination-card">
+                        <img src="images/gudi-padwa-marathi-new-year-free-photo-scaled.jpg" alt="Gudi Padwa" />
+                        <h4>Gudi Padwa</h4>
+                        <p>The Maharashtrian New Year, celebrated with vibrant processions, traditional foods, and the raising of the Gudi flag for prosperity.</p>
+                    </div>
+                    <div class="destination-card">
+                        <img src="images/makar samkranti" alt="Makar Sankranti" />
+                        <h4>Makar Sankranti</h4>
+                        <p>A harvest festival marked by kite flying, sharing of tilgul sweets, and community gatherings to welcome the sun's northward journey.</p>
+                    </div>
+                    <div class="destination-card">
+                        <img src="images/nag-panchami-background-with-king-cobra-and-lingam-free-vector.jpg" alt="Nag Panchami" />
+                        <h4>Nag Panchami</h4>
+                        <p>A unique festival where serpents are worshipped, reflecting Maharashtra's deep-rooted traditions and reverence for nature.</p>
+                    </div>
+                    <div class="destination-card">
+                        <img src="images/warli_art_banner.jpg" alt="Warli Art" />
+                        <h4>Warli Art</h4>
+                        <p>Ancient tribal art form using geometric patterns to depict daily life, nature, and rituals, originating from the Warli tribe.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+        <!-- Plan Your Trip -->
+        <section class="plan-trip" id="plan">
+            <h2>Plan Your Visit</h2>
+            <div class="trip-planner">
+                <form id="tripForm">
+                    <input type="text" placeholder="Where do you want to go?">
+                    <input type="date" placeholder="Check-in">
+                    <input type="date" placeholder="Check-out">
+                    <button type="submit" class="cta-button">Search</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- City Details Pages -->
+        <div class="city-pages">
+            <!-- Aurangabad Page -->
+            <section id="city-aurangabad" class="city-page">
+                <div class="city-nav">
+                    <a href="#destinations" class="back-btn">← Back to Cities</a>
+                </div>
+                <div class="city-content">
+                    <div class="city-header">
+                        <h2> Chatrapati Sambhaji Nagar</h2>
+                        <p>The Tourism Capital of Maharashtra</p>
+                    </div>
+                    
+                    <div class="city-options">
+                        <button class="option-btn active" data-target="places">Tourist Places</button>
+                        <button class="option-btn" data-target="heritage">Cultural Heritage</button>
+                        <button class="option-btn" data-target="cuisine">Food & Dining</button>
+                        <button class="option-btn" data-target="stays">Accommodations</button>
+                        <button class="option-btn" data-target="transport">Transportation</button>
+                    </div>
+
+                    <!-- Tourist Places -->
+                    <div class="option-content places active">
+                        <h3>Places to Visit</h3>
+                        <div class="places-grid">
+                            <div class="place-card">
+                                <img src="images/ajanta.jpg" alt="Ajanta Caves">
+                                <div class="place-info">
+                                    <h4>Ajanta Caves</h4>
+                                    <p>UNESCO World Heritage site featuring 30 rock-cut Buddhist caves with stunning murals, frescoes and sculptures dating back to 2nd century BCE.</p>
+                                    <div class="place-details">
+                                        <span><i class="fas fa-clock"></i> 8 AM - 5 PM</span>
+                                        <span><i class="fas fa-ticket-alt"></i> ₹30</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="place-card">
+                                <img src="images/ellora.jpg" alt="Ellora Caves">
+                                <div class="place-info">
+                                    <h4>Ellora Caves</h4>
+                                    <p>A magnificent complex of 34 rock-cut temples showcasing Buddhist, Hindu and Jain monuments, including the iconic Kailasa Temple.</p>
+                                    <div class="place-details">
+                                        <span><i class="fas fa-clock"></i> 6 AM - 6 PM</span>
+                                        <span><i class="fas fa-ticket-alt"></i> ₹40</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="place-card">
+                                <img src="images/bibi-ka-maqbara.jpg" alt="Bibi Ka Maqbara">
+                                <div class="place-info">
+                                    <h4>Bibi Ka Maqbara</h4>
+                                    <p>Known as the 'Taj of Deccan', this architectural marvel was built by Aurangzeb's son in memory of his mother in 1660.</p>
+                                    <div class="place-details">
+                                        <span><i class="fas fa-clock"></i> 8 AM - 8 PM</span>
+                                        <span><i class="fas fa-ticket-alt"></i> Free</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="place-card">
+                                <img src="images/grishneshwar.jpg" alt="Grishneshwar Temple">
+                                <div class="place-info">
+                                    <h4>Grishneshwar Temple</h4>
+                                    <p>One of the 12 Jyotirlingas, this ancient temple showcases exquisite South Indian architecture and religious significance.</p>
+                                    <div class="place-details">
+                                        <span><i class="fas fa-clock"></i> 5 AM - 9 PM</span>
+                                        <span><i class="fas fa-ticket-alt"></i> Free</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="place-card">
+                                <img src="images/daulatabad-fort.jpg" alt="Daulatabad Fort">
+                                <div class="place-info">
+                                    <h4>Daulatabad Fort</h4>
+                                    <p>A 12th-century fortress known for its sophisticated defense systems, featuring the Chand Minar, Chini Mahal, and unique architecture.</p>
+                                    <div class="place-details">
+                                        <span><i class="fas fa-clock"></i> 8 AM - 6 PM</span>
+                                        <span><i class="fas fa-ticket-alt"></i> ₹10</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="place-card">
+                                <img src="images/panchakki.jpg" alt="Panchakki">
+                                <div class="place-info">
+                                    <h4>Panchakki Water Mill</h4>
+                                    <p>A 17th-century water mill showcasing medieval engineering, with a shrine of Baba Shah Musafir and peaceful gardens.</p>
+                                    <div class="place-details">
+                                        <span><i class="fas fa-clock"></i> Open 24 hours</span>
+                                        <span><i class="fas fa-ticket-alt"></i> Free</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="place-card">
+                                <img src="images/aurangabad-caves.jpg" alt="Aurangabad Caves">
+                                <div class="place-info">
+                                    <h4>Aurangabad Caves</h4>
+                                    <p>12 rock-cut Buddhist shrines dating from 2nd-6th century AD, known for their exquisite sculptures and Tantric influences.</p>
+                                    <div class="place-details">
+                                        <span><i class="fas fa-clock"></i> 9 AM - 5 PM</span>
+                                        <span><i class="fas fa-ticket-alt"></i> ₹20</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="place-card">
+                                <img src="images/salim-ali-lake.jpg" alt="Salim Ali Lake">
+                                <div class="place-info">
+                                    <h4>Salim Ali Lake & Bird Sanctuary</h4>
+                                    <p>A serene lake and bird sanctuary perfect for nature lovers and bird watching enthusiasts.</p>
+                                    <div class="place-details">
+                                        <span><i class="fas fa-clock"></i> 8 AM - 5 PM</span>
+                                        <span><i class="fas fa-ticket-alt"></i> Free</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Cultural Heritage -->
+                    <div class="option-content heritage">
+                        <h3>Cultural Heritage</h3>
+                        <div class="heritage-grid">
+                            <div class="heritage-card">
+                                <img src="images/paithani.jpg" alt="Paithani Sarees">
+                                <div class="heritage-info">
+                                    <h4>Paithani Weaving</h4>
+                                    <p>Traditional silk weaving art form dating back to Satvahana dynasty.</p>
+                                    <a href="#" class="heritage-link">Learn More</a>
+                                </div>
+                            </div>
+                            <div class="heritage-card">
+                                <img src="images/himroo.jpg" alt="Himroo Shawls">
+                                <div class="heritage-info">
+                                    <h4>Himroo Craft</h4>
+                                    <p>Ancient Persian method of fabric weaving, unique to Aurangabad.</p>
+                                    <a href="#" class="heritage-link">Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Food & Dining -->
+                    <div class="option-content cuisine">
+                        <h3>Food & Restaurants</h3>
+                        <div class="food-sections">
+                            <!-- Local Specialties -->
+                            <div class="specialties-section">
+                                <h4>Local Specialties</h4>
+                                <div class="cuisine-grid">
+                                    <div class="cuisine-card">
+                                        <img src="images/naan-khaliya.jpg" alt="Naan Khaliya">
+                                        <h5>Naan Khaliya</h5>
+                                        <p>Traditional Mughlai curry with special naan</p>
+                                        <span class="price">₹150-250</span>
+                                    </div>
+                                    <!-- Add more specialties -->
+                                </div>
+                            </div>
+
+                            <!-- Top Restaurants -->
+                            <div class="restaurants-section">
+                                <h4>Popular Restaurants</h4>
+                                <div class="restaurant-list">
+                                    <div class="restaurant-card">
+                                        <div class="restaurant-info">
+                                            <h5>Green Leaf Restaurant</h5>
+                                            <p>Multi-cuisine restaurant known for local specialties</p>
+                                            <div class="restaurant-details">
+                                                <span><i class="fas fa-star"></i> 4.5</span>
+                                                <span><i class="fas fa-wallet"></i> ₹500 for two</span>
+                                            </div>
+                                        </div>
+                                        <a href="tel:+919XXXXXXXX" class="call-btn">Call to Reserve</a>
+                                    </div>
+                                    <!-- Add more restaurants -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Accommodations -->
+                    <div class="option-content stays">
+                        <h3>Where to Stay</h3>
+                        <div class="stays-grid">
+                            <!-- Luxury Hotels -->
+                            <div class="hotel-category">
+                                <h4>Luxury Hotels</h4>
+                                <div class="hotel-list">
+                                    <div class="hotel-card">
+                                        <img src="images/vivanta.jpg" alt="Vivanta Aurangabad">
+                                        <div class="hotel-info">
+                                            <h5>Vivanta Aurangabad</h5>
+                                            <p>5-star hotel with world-class amenities</p>
+                                            <div class="hotel-details">
+                                                <span><i class="fas fa-star"></i> 4.8</span>
+                                                <span><i class="fas fa-rupee-sign"></i> 7000-12000/night</span>
+                                            </div>
+                                            <div class="hotel-actions">
+                                                <a href="#" class="book-btn">Book Now</a>
+                                                <a href="tel:+919XXXXXXXX" class="call-btn">Call Hotel</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Add more luxury hotels -->
+                                </div>
+                            </div>
+
+                            <!-- Budget Hotels -->
+                            <div class="hotel-category">
+                                <h4>Budget-Friendly Options</h4>
+                                <div class="hotel-list">
+                                    <!-- Add budget hotels -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Transportation -->
+                    <div class="option-content transport">
+                        <h3>Getting Around</h3>
+                        <div class="transport-sections">
+                            <!-- Vehicle Rental -->
+                            <div class="rental-section">
+                                <h4>Vehicle Rentals</h4>
+                                <div class="rental-grid">
+                                    <div class="rental-card">
+                                        <div class="rental-info">
+                                            <h5>Car Rental</h5>
+                                            <ul class="rental-options">
+                                                <li>
+                                                    <span>Economy Car</span>
+                                                    <span>₹1500/day</span>
+                                                </li>
+                                                <li>
+                                                    <span>SUV</span>
+                                                    <span>₹2500/day</span>
+                                                </li>
+                                            </ul>
+                                            <a href="tel:+919XXXXXXXX" class="call-btn">Book Vehicle</a>
+                                        </div>
+                                    </div>
+                                    <div class="rental-card">
+                                        <div class="rental-info">
+                                            <h5>Two-Wheeler Rental</h5>
+                                            <ul class="rental-options">
+                                                <li>
+                                                    <span>Scooter</span>
+                                                    <span>₹500/day</span>
+                                                </li>
+                                                <li>
+                                                    <span>Motorcycle</span>
+                                                    <span>₹800/day</span>
+                                                </li>
+                                            </ul>
+                                            <a href="tel:+919XXXXXXXX" class="call-btn">Book Vehicle</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Local Transport -->
+                            <div class="local-transport">
+                                <h4>Public Transportation</h4>
+                                <div class="transport-info">
+                                    <div class="transport-card">
+                                        <h5>Auto Rickshaw</h5>
+                                        <p>Available throughout the city</p>
+                                        <span class="rate">Base fare: ₹20</span>
+                                    </div>
+                                    <div class="transport-card">
+                                        <h5>City Bus</h5>
+                                        <p>Regular service to major attractions</p>
+                                        <span class="rate">Fare: ₹10-30</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Template for other cities -->
+            <section id="city-nanded" class="city-page">
+                <!-- Similar structure as Aurangabad -->
+            </section>
+            
+            <!-- Add sections for remaining cities -->
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Email: info@maharashtraexplorer.com</p>
+                <p>Phone: +91 XXX XXX XXXX</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Maharashtra Explorer. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <button class="back-to-top" id="backToTop" title="Back to Top"><i class="fas fa-arrow-up"></i></button>
+    <script>
+    window.addEventListener('scroll', function() {
+      const btn = document.getElementById('backToTop');
+      if (window.scrollY > 300) {
+        btn.classList.add('show');
+      } else {
+        btn.classList.remove('show');
+      }
+    });
+    document.getElementById('backToTop').addEventListener('click', function() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+    </script>
+
+    <script src="script.js"></script>
+</body>
+</html> 
+
